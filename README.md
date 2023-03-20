@@ -1,2 +1,3 @@
-# react-hooks
-Learning React hooks
+# Learning React hooks
+
+https://ja.reactjs.org/docs/hooks-intro.html
