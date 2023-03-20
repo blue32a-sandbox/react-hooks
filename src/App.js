@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Effect from './Effect';
 import Home from './Home';
+import Rule from './Rule';
 import State from './State';
 
 function App() {
@@ -12,7 +13,8 @@ function App() {
   const contents = new Map([
     ['home', <Home changePageHandler={changePageHandler} />],
     ['state', <State changePageHandler={changePageHandler} />],
-    ['effect', <Effect  changePageHandler={changePageHandler} />]
+    ['effect', <Effect changePageHandler={changePageHandler} />],
+    ['rule', <Rule  changePageHandler={changePageHandler} />]
   ]);
   const content = contents.get(page);
 
