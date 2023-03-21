@@ -11,6 +11,7 @@ export default function Home({ changePageHandler }) {
       <ul>
         <li onClick={() => changePageHandler('state')}>use state</li>
         <li onClick={() => changePageHandler('effect')}>use effect</li>
+        <li onClick={() => changePageHandler('context')}>use context</li>
       </ul>
     </>
   );

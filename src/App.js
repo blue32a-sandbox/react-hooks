@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Context from './Context';
 import Custom from './Custom';
 import Effect from './Effect';
 import Home from './Home';
@@ -16,7 +17,8 @@ function App() {
     ['state', <State changePageHandler={changePageHandler} />],
     ['effect', <Effect changePageHandler={changePageHandler} />],
     ['rule', <Rule changePageHandler={changePageHandler} />],
-    ['custom', <Custom changePageHandler={changePageHandler} />]
+    ['custom', <Custom changePageHandler={changePageHandler} />],
+    ['context', <Context changePageHandler={changePageHandler} />]
   ]);
   const content = contents.get(page);
 
