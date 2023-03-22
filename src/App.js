@@ -3,6 +3,7 @@ import Context from './Context';
 import Custom from './Custom';
 import Effect from './Effect';
 import Home from './Home';
+import Reducer from './Reducer';
 import Rule from './Rule';
 import State from './State';
 
@@ -18,7 +19,8 @@ function App() {
     ['effect', <Effect changePageHandler={changePageHandler} />],
     ['rule', <Rule changePageHandler={changePageHandler} />],
     ['custom', <Custom changePageHandler={changePageHandler} />],
-    ['context', <Context changePageHandler={changePageHandler} />]
+    ['context', <Context changePageHandler={changePageHandler} />],
+    ['reducer', <Reducer changePageHandler={changePageHandler} />]
   ]);
   const content = contents.get(page);
 
