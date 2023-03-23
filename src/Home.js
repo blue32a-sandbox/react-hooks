@@ -15,6 +15,7 @@ export default function Home({ changePageHandler }) {
         <li onClick={() => changePageHandler('reducer')}>use reducer</li>
         <li onClick={() => changePageHandler('callback')}>use callback</li>
         <li onClick={() => changePageHandler('memo')}>use memo</li>
+        <li onClick={() => changePageHandler('ref')}>use ref</li>
       </ul>
     </>
   );
