@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Callback from './Callback';
 import Context from './Context';
 import Custom from './Custom';
 import Effect from './Effect';
@@ -20,7 +21,8 @@ function App() {
     ['rule', <Rule changePageHandler={changePageHandler} />],
     ['custom', <Custom changePageHandler={changePageHandler} />],
     ['context', <Context changePageHandler={changePageHandler} />],
-    ['reducer', <Reducer changePageHandler={changePageHandler} />]
+    ['reducer', <Reducer changePageHandler={changePageHandler} />],
+    ['callback', <Callback changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 

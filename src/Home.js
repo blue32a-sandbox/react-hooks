@@ -13,6 +13,7 @@ export default function Home({ changePageHandler }) {
         <li onClick={() => changePageHandler('effect')}>use effect</li>
         <li onClick={() => changePageHandler('context')}>use context</li>
         <li onClick={() => changePageHandler('reducer')}>use reducer</li>
+        <li onClick={() => changePageHandler('callback')}>use callback</li>
       </ul>
     </>
   );
