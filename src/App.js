@@ -4,6 +4,7 @@ import Context from './Context';
 import Custom from './Custom';
 import Effect from './Effect';
 import Home from './Home';
+import Memo from './Memo';
 import Reducer from './Reducer';
 import Rule from './Rule';
 import State from './State';
@@ -23,6 +24,7 @@ function App() {
     ['context', <Context changePageHandler={changePageHandler} />],
     ['reducer', <Reducer changePageHandler={changePageHandler} />],
     ['callback', <Callback changePageHandler={changePageHandler} />],
+    ['memo', <Memo changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 
