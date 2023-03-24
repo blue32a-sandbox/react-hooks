@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Callback from './Callback';
 import Context from './Context';
 import Custom from './Custom';
+import DebugValue from './DebugValue';
 import Effect from './Effect';
 import Home from './Home';
 import ImperativeHandle from './ImperativeHandle';
@@ -31,6 +32,7 @@ function App() {
     ['ref', <Ref changePageHandler={changePageHandler} />],
     ['imperative-handle', <ImperativeHandle changePageHandler={changePageHandler} />],
     ['layout-effect', <LayoutEffect changePageHandler={changePageHandler} />],
+    ['debug-value', <DebugValue changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 

@@ -18,6 +18,7 @@ export default function Home({ changePageHandler }) {
         <li onClick={() => changePageHandler('ref')}>use ref</li>
         <li onClick={() => changePageHandler('imperative-handle')}>use imperative handle</li>
         <li onClick={() => changePageHandler('layout-effect')}>use layout effect</li>
+        <li onClick={() => changePageHandler('debug-value')}>use debug value</li>
       </ul>
     </>
   );
