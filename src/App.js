@@ -5,6 +5,7 @@ import Custom from './Custom';
 import Effect from './Effect';
 import Home from './Home';
 import ImperativeHandle from './ImperativeHandle';
+import LayoutEffect from './LayoutEffect';
 import Memo from './Memo';
 import Reducer from './Reducer';
 import Ref from './Ref';
@@ -29,6 +30,7 @@ function App() {
     ['memo', <Memo changePageHandler={changePageHandler} />],
     ['ref', <Ref changePageHandler={changePageHandler} />],
     ['imperative-handle', <ImperativeHandle changePageHandler={changePageHandler} />],
+    ['layout-effect', <LayoutEffect changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 
