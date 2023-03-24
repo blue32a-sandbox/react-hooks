@@ -21,6 +21,7 @@ export default function Home({ changePageHandler }) {
         <li onClick={() => changePageHandler('debug-value')}>use debug value</li>
         <li onClick={() => changePageHandler('deferred-value')}>use deferred value</li>
         <li onClick={() => changePageHandler('transition')}>use transition</li>
+        <li onClick={() => changePageHandler('id')}>use id</li>
       </ul>
     </>
   );

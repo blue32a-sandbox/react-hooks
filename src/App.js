@@ -6,6 +6,7 @@ import DebugValue from './DebugValue';
 import DeferredValue from './DeferredValue';
 import Effect from './Effect';
 import Home from './Home';
+import Id from './Id';
 import ImperativeHandle from './ImperativeHandle';
 import LayoutEffect from './LayoutEffect';
 import Memo from './Memo';
@@ -37,6 +38,7 @@ function App() {
     ['debug-value', <DebugValue changePageHandler={changePageHandler} />],
     ['deferred-value', <DeferredValue changePageHandler={changePageHandler} />],
     ['transition', <Transition changePageHandler={changePageHandler} />],
+    ['id', <Id changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 
