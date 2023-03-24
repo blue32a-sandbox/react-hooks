@@ -20,6 +20,7 @@ export default function Home({ changePageHandler }) {
         <li onClick={() => changePageHandler('layout-effect')}>use layout effect</li>
         <li onClick={() => changePageHandler('debug-value')}>use debug value</li>
         <li onClick={() => changePageHandler('deferred-value')}>use deferred value</li>
+        <li onClick={() => changePageHandler('transition')}>use transition</li>
       </ul>
     </>
   );

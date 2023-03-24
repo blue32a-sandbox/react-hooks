@@ -13,6 +13,7 @@ import Reducer from './Reducer';
 import Ref from './Ref';
 import Rule from './Rule';
 import State from './State';
+import Transition from './Transition';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -35,6 +36,7 @@ function App() {
     ['layout-effect', <LayoutEffect changePageHandler={changePageHandler} />],
     ['debug-value', <DebugValue changePageHandler={changePageHandler} />],
     ['deferred-value', <DeferredValue changePageHandler={changePageHandler} />],
+    ['transition', <Transition changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 
