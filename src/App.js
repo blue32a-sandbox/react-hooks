@@ -3,6 +3,7 @@ import Callback from './Callback';
 import Context from './Context';
 import Custom from './Custom';
 import DebugValue from './DebugValue';
+import DeferredValue from './DeferredValue';
 import Effect from './Effect';
 import Home from './Home';
 import ImperativeHandle from './ImperativeHandle';
@@ -33,6 +34,7 @@ function App() {
     ['imperative-handle', <ImperativeHandle changePageHandler={changePageHandler} />],
     ['layout-effect', <LayoutEffect changePageHandler={changePageHandler} />],
     ['debug-value', <DebugValue changePageHandler={changePageHandler} />],
+    ['deferred-value', <DeferredValue changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 

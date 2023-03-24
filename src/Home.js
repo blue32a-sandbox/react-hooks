@@ -19,6 +19,7 @@ export default function Home({ changePageHandler }) {
         <li onClick={() => changePageHandler('imperative-handle')}>use imperative handle</li>
         <li onClick={() => changePageHandler('layout-effect')}>use layout effect</li>
         <li onClick={() => changePageHandler('debug-value')}>use debug value</li>
+        <li onClick={() => changePageHandler('deferred-value')}>use deferred value</li>
       </ul>
     </>
   );
