@@ -4,6 +4,7 @@ import Context from './Context';
 import Custom from './Custom';
 import Effect from './Effect';
 import Home from './Home';
+import ImperativeHandle from './ImperativeHandle';
 import Memo from './Memo';
 import Reducer from './Reducer';
 import Ref from './Ref';
@@ -27,6 +28,7 @@ function App() {
     ['callback', <Callback changePageHandler={changePageHandler} />],
     ['memo', <Memo changePageHandler={changePageHandler} />],
     ['ref', <Ref changePageHandler={changePageHandler} />],
+    ['imperative-handle', <ImperativeHandle changePageHandler={changePageHandler} />],
   ]);
   const content = contents.get(page);
 
